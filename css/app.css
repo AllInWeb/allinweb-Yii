@@ -14,7 +14,7 @@ body {
 
 #logo,
 .message {
-	color: #fff;
+	color: orange;
 }
 
 #logo {
@@ -67,19 +67,19 @@ div[data-target] > div {
 }
 
 div#sites {
-	background: #066093;
+	background: #c0c0c0;
 }
 
 div#portfolio {
-	background: #0670ad;
+    background: greenyellow;
 }
 
 div#tarif {
-	background: #0880c4;
+    background: chocolate;
 }
 div#faq {
-    background: lightsalmon;
+    background: olive;
 }
-div#contact {
-    background: #0b9bee;
+div#contact{
+    background: saddlebrown;
 }

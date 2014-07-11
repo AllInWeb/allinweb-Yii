@@ -29,9 +29,23 @@ class SiteController extends Controller
 	{
         $carousel = Carousel::model()->findAll();
         $portfolio = Portfolio::model()->findAll();
+        $tarif =  Tarif::model()->findAll();
+
+        $criteria = new CDbCriteria();
+        $criteria->condition = 'answered = 1 AND actual = 1';
+        $criteria->limit = 2;
+        $questions = Question::model()->findAll($criteria);
+
+
+        $question =new Question;
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index',array('carousel'=>$carousel,'portfolio'=>$portfolio));
+		$this->renderPartial('index',array('carousel'=>$carousel,
+            'portfolio'=>$portfolio,
+            'tarif'=>$tarif,
+            'questions'=>$questions,
+            'question'=> $question
+        ));
 	}
 
 	/**
@@ -95,6 +109,7 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
+
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

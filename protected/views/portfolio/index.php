@@ -10,10 +10,15 @@
         });
 
 
-        $('#small-portfolio').hoverizr(
-            
-        );
-
+    });
+    $(document).ready(function() {
+        grayscale.prepare( $('.yoxview img') );
+        grayscale( $('.yoxview img') );
+        $('.yoxview img').hover(function() {
+            grayscale.reset( $(this) );
+        }, function() {
+            grayscale( $(this) );
+        });
     });
 </script>
 
@@ -21,7 +26,7 @@
 
 <div class="yoxview">
     <?php foreach ($model as $site): ?>
-        <a href="images/portfolio/<?php echo $site->image; ?>"><img src="images/portfolio/<?php echo $site->image; ?>"
+        <a href="<?php echo Yii::app()->params['portfolioImageUrl'] . $site->image; ?>"><img src="<?php echo  Yii::app()->params['portfolioImageUrl'] . $site->image; ?>"
                                                                     alt="<?php echo $site->id ?>"
                                                                     title="<?php echo $site->description ?>"
                                                                     width="100px" height="100px"

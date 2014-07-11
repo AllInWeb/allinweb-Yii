@@ -8,6 +8,7 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Web Application',
+    'language'=>'ru',
 
     // preloading 'log' component
     'preload' => array('log'),
@@ -27,6 +28,11 @@ return array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
         ),
+        'admin' => array(
+           'class' => 'application.modules.admin.AdminModule'
+
+        ),
+
 
     ),
 
@@ -44,7 +50,7 @@ return array(
             'allowAutoLogin' => true,
         ),
         // uncomment the following to enable URLs in path-format
-        /*
+
         'urlManager'=>array(
             'urlFormat'=>'path',
             'rules'=>array(
@@ -52,8 +58,9 @@ return array(
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
+            'showScriptName'=>false,
         ),
-        */
+
         /*'db'=>array(
             'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
         ),*/
@@ -93,6 +100,8 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
+        'adminEmail' => 'viktor.novikov95@gmail.com',
+        'carouselImageUrl' => '/images/carousel/',
+        'portfolioImageUrl' => '/images/portfolio/',
     ),
 );
