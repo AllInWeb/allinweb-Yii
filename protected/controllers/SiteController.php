@@ -27,9 +27,11 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-        $carousel = Carousel::model()->findAll();
+        $carousel = Carousel::model()->findAll(array('limit'=>5));
+
         $portfolio = Portfolio::model()->findAll();
         $tarif =  Tarif::model()->findAll();
+
 
         $criteria = new CDbCriteria();
         $criteria->condition = 'answered = 1 AND actual = 1';

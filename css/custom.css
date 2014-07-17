@@ -1,0 +1,52 @@
+#accordion{
+    /*background-color: green;*/
+    margin-top: 15%;
+    text-align: left;
+}
+#answer{
+
+    margin-left: 20px;
+}
+.hidden-menu {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    opacity: 0.9;
+
+}
+.answers {
+    display: none;
+}
+
+.btn-normal {
+    position: absolute;
+    /*z-index: 1000;*/
+    /*margin-right: -900px;*/
+    vertical-align: middle;
+    margin-left: 60%;
+    /*background-color: orange;*/
+}
+
+div#sites {
+    background: #ffffff;
+}
+
+div#portfolio {
+    background: #ffffff;
+}
+
+div#tarif {
+    background: #ffffff;
+}
+
+div#faq {
+    background: #ffffff;
+}
+
+div#contact {
+    background: #ffffff;
+}
+#plus{
+    color: orange;
+}

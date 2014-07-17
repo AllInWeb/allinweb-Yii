@@ -4,11 +4,27 @@ use \Controller;*/
 
 class PortfolioController extends Controller
 {
-	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
-	public $layout='//layouts/column2';
+//	/**
+//	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+//	 * using two-column layout. See 'protected/views/layouts/column2.php'.
+//	 */
+//	public $layout='//layouts/column2';
+
+    public function actions()
+    {
+        return array(
+            'resized' => array(
+                'class'   => 'ext.resizer.ResizerAction',
+                'options' => array(
+                    // Tmp dir to store cached resized images
+                    'cache_dir'   => Yii::getPathOfAlias('webroot') . '/assets/',
+
+                    // Web root dir to search images from
+                    'base_dir'    => Yii::getPathOfAlias('webroot') . '/',
+                )
+            ),
+        );
+    }
 
 	/**
 	 * @return array action filters
@@ -30,18 +46,14 @@ class PortfolioController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','resized'),
 				'users'=>array('*'),
 			),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','admin','delete','admin','delete'),
+                'actions'=>array('create','update','admin','delete'),
                 'users'=>array(Yii::app()->user->name),
-                'roles'=>array(2),
+                'roles'=>array(2,1),
             ),
-			/*array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),*/
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),

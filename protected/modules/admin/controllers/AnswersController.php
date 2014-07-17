@@ -6,7 +6,7 @@ class AnswersController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+//	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -34,7 +34,7 @@ class AnswersController extends Controller
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','admin','delete'),
 				'users'=>array(Yii::app()->user->name),
-                'roles'=>array(2),
+                'roles'=>array(2,1),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

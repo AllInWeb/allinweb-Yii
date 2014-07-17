@@ -2,19 +2,37 @@
 /* @var $this TarifController */
 /* @var $dataProvider CActiveDataProvider */
 ?>
-<?php $atr = Tarif::model()->attributeLabels() ?>
-<style>
+<script type="text/javascript">
+$(function(){
 
-    #tbl{
-        border: 1px solid;
+    $('#tbl tr:nth-child(4)').after('<tr><td><i style="color: orange;text-decoration: underline;padding: 10px;margin: 15px;">Основное</i></td></tr>');
+    $('#tbl tr:nth-child(7)').after('<tr><td><i style="color: orange;text-decoration: underline;padding: 10px;margin: 15px;">Функционал сайта</i></td></tr>');
+    $('#tbl tr:nth-child(21)').after('<tr><td><i style="color: orange;text-decoration: underline;padding: 10px;margin: 15px;">Подготовка к раскрутке</i></td></tr>');
+
+})
+
+</script>
+
+<?php //$atr = Tarif::model()->attributeLabels() ?>
+<?php $atr = Tarif::model()->getAttributes() ?>
+<pre>
+</pre>
+    <style>
+    #tbl tr:nth-child(1){
+       display:none;
+    }
+    #tbl tr:nth-child(2){
+        color: orange;
+    }
+    #tbl tr:nth-child(4){
+        color: orange;
     }
 </style>
-<h1>Tarifs</h1>
 
 <table id="tbl">
     <?php foreach ($atr as $key => $name): ?>
         <tr>
-            <td><?php echo $name ?></td>
+            <td><?php echo Yii::t('aliases',$key); ?></td>
 
             <?php foreach ($model as $tarif): ?>
                 <?php

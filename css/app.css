@@ -26,14 +26,14 @@ body {
 	margin: 20px 0;
 }
 
-.btn-normal {
-	padding: 8px 20px;
-	border-radius: 5px;
-	background: #56bffc;
-	color: #fff;
-	text-decoration: none;
-	font-family: "Lucida Sans", sans-serif;
-}
+/*.btn-normal {*/
+	/*padding: 8px 20px;*/
+	/*border-radius: 5px;*/
+	/*background: #56bffc;*/
+	/*color: #fff;*/
+	/*text-decoration: none;*/
+	/*font-family: "Lucida Sans", sans-serif;*/
+/*}*/
 
 .content-resizer {
 	width:940px;
@@ -67,19 +67,20 @@ div[data-target] > div {
 }
 
 div#sites {
-	background: #c0c0c0;
+	background: #ffffff;
 }
 
 div#portfolio {
-    background: greenyellow;
+    background: #ffffff;
 }
 
 div#tarif {
-    background: chocolate;
+    background: #ffffff;
 }
 div#faq {
-    background: olive;
+    background: #ffffff;
+
 }
 div#contact{
-    background: saddlebrown;
+    background:#ffffff;
 }

@@ -112,7 +112,8 @@
 		}, {
 			duration: opts.speed,
 			easing: opts.animation
-		});
+            });
+
 
 	}
 

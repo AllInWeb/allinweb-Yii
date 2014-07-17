@@ -33,12 +33,6 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.infinitecarousel.js" type="text/javascript"></script>
 
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/yoxview/yoxview-init.js"></script>
-
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/grayscale.js"></script>
-
-
-
-
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 

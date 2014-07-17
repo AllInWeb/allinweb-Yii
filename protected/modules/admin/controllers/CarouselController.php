@@ -6,7 +6,7 @@ class CarouselController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -34,7 +34,7 @@ class CarouselController extends Controller
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','admin','delete','admin','delete'),
 				'users'=>array(Yii::app()->user->name),
-                'roles'=>array(2),
+                'roles'=>array(2,1),
 			),
 			/*array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
@@ -128,7 +128,11 @@ class CarouselController extends Controller
 	 */
 	public function actionIndex()
 	{
-        $model = Carousel::model()->findAll();
+        $criteria = new CDbCriteria();
+        $criteria->limit  = 5;
+
+        $model = Carousel::model()->findAll($criteria);
+
         $this->render('index',array(
             'model'=>$model,
         ));

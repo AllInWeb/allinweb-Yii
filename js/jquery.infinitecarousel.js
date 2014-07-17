@@ -50,7 +50,7 @@
 				$(obj).append('<div id="textholder'+randID+'" class="textholder" style="position:absolute;bottom:0px;margin-bottom:'+-imgHeight*o.textholderHeight+'px;left:'+$(obj).css('paddingLeft')+'"></div>');
 				var correctTHWidth = parseInt($('#textholder'+randID).css('paddingTop'));
 				var correctTHHeight = parseInt($('#textholder'+randID).css('paddingRight'));
-				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).height((imgHeight*o.textholderHeight)-(correctTHHeight * 2)).css({'backgroundColor':'#FFF','opacity':'0.5'});
+				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).height((imgHeight*o.textholderHeight)-(correctTHHeight * 2)).css({'backgroundColor':'#FFF','opacity':'0.9'});
 				showtext($('li:eq(1) p', obj).html());
 			
 				// Prev/next button(img) 

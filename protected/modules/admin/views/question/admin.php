@@ -50,7 +50,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
                     'label'=>'Ответить',
                     'options'=>array('class'=>'glyphicon glyphicon-check'),
                     //'url'=>"Yii::app()->createUrl('answers/create',array('id'=>$model->id))",
-                    'url'=>'Yii::app()->createUrl("answers/create", array("question_id" => $data->id))',
+                    'url'=>'Yii::app()->createUrl("admin/answers/create", array("question_id" => $data->id))',
                     'visible' => '$data->answered == 0'
                 )
             )

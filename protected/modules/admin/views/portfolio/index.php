@@ -8,37 +8,39 @@
             backgroundColor: 'Blue',
             playDelay: 5000
         });
+});
 
-
-    });
-    $(document).ready(function() {
-        grayscale.prepare( $('.yoxview img') );
-        grayscale( $('.yoxview img') );
-        $('.yoxview img').hover(function() {
-            grayscale.reset( $(this) );
-        }, function() {
-            grayscale( $(this) );
-        });
-    });
 </script>
 
-<h1>Portfolios</h1>
+<style>
+    #small-portfolio {
+        margin: 5px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
 
+    }
+    #small-portfolio:hover {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+
+    }
+    .yoxview{
+        text-align: left;
+    }
+</style>
 <div class="yoxview">
     <?php foreach ($model as $site): ?>
-        <a href="images/portfolio/<?php echo $site->image; ?>"><img src="images/portfolio/<?php echo $site->image; ?>"
-                                                                    alt="<?php echo $site->id ?>"
-                                                                    title="<?php echo $site->description ?>"
-                                                                    width="100px" height="100px"
-                                                                    id="small-portfolio"></a>
+        <a href="images/portfolio/<?php echo $site->image; ?>"><img
+                src="/admin/portfolio/resized/200x200/images/portfolio/<?php echo $site->image; ?>" title="<?php echo $site->description; ?>"
+                alt="<?php echo $site->id ?>" id="small-portfolio"></a>
     <?php endforeach; ?>
 </div>
 
 
 
-
-<?php /*$this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-));*/
-?>

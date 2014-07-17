@@ -6,7 +6,7 @@ class UserController extends Controller
      * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
-    public $layout = '//layouts/column2';
+   // public $layout = '//layouts/column2';
 
     /**
      * @return array action filters
@@ -27,12 +27,12 @@ class UserController extends Controller
     public function accessRules()
     {
         return array(
-            array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view'),
-                'users' => array('*'),
-            ),
+//            array('allow', // allow all users to perform 'index' and 'view' actions
+//                'actions' => array(),
+//                'users' => array('*'),
+//            ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'admin', 'delete'),
+                'actions' => array('index', 'view','create', 'update', 'admin', 'delete'),
                 'users' => array(Yii::app()->user->name),
                 'roles' => array(2),
             ),
@@ -65,6 +65,7 @@ class UserController extends Controller
         $this->performAjaxValidation($model);
 
         if (isset($_POST['User'])) {
+
             $model->attributes = $_POST['User'];
 
 

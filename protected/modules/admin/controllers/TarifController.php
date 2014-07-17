@@ -32,9 +32,9 @@ class TarifController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete','addcolumn'),
+				'actions'=>array('create','update','admin','delete','addcolumn','dropcolumn'),
 				'users'=>array(Yii::app()->user->name),
-                'roles'=>array(2),
+                'roles'=>array(2,1),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -55,7 +55,15 @@ class TarifController extends Controller
 
     public function actionAddcolumn()
     {
+        $columns = Tarif::model()->getAttributes();
+
         if(isset($_POST['column']) && isset($_POST['type'])){
+
+            $alias = new Aliases();
+            $alias->column = $_POST['column'];
+            $alias->alias = $_POST['alias'];
+            $alias->save();
+
 
             $command = Yii::app()->db->createCommand();
            if( $command->addColumn('tbl_tarif',$_POST['column'],$_POST['type']) ){
@@ -65,7 +73,15 @@ class TarifController extends Controller
         }
 
 
-        $this->render('addcolumn');
+        $this->render('addcolumn',array('columns'=>$columns));
+    }
+    public function actionDropcolumn($column)
+    {
+       $command = Yii::app()->db->createCommand;
+       if($command->dropColumn('tbl_tarif',$column)){
+         $this->redirect(array('/admin/tarif/addcolumn'));
+       }
+
     }
 
 	/**

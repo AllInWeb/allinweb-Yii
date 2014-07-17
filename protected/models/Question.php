@@ -29,6 +29,10 @@ class Question extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+
+            array('theme, fio, email, question', 'required'),
+            array('email','email'),
+
 			array('date', 'numerical', 'integerOnly'=>true),
 			array('theme, fio, email', 'length', 'max'=>255),
 			array('question', 'safe'),
@@ -57,11 +61,11 @@ class Question extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'theme' => 'Theme',
-			'fio' => 'Fio',
+			'theme' => 'Тема',
+			'fio' => 'ФИО',
 			'email' => 'Email',
-			'question' => 'Question',
-			'date' => 'Date',
+			'question' => 'Вопрос',
+			'date' => 'Дата',
 		);
 	}
 

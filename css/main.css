@@ -1,8 +1,11 @@
 
 #lg{
-    margin-top: -40px;
+    margin-top: -70px;
     /*float: left;*/
     /*/  margin-left: 100px;*/
+}
+#lg:hover{
+    opacity: 0.7;
 }
 #carousel {
     margin: 0 auto;
@@ -23,14 +26,21 @@
     display: inline;
     float: left;
 }
+/*#carousel li p{*/
+    /*background-color: red;*/
+/*}*/
 .textholder {
 
+    opacity: 0.9;
+    overflow: scroll;
+    color: orange;
     text-align: left;
-    font-size: large;
-    padding: 6px;
-    -moz-border-radius: 6px 6px 0 0;
-    -webkit-border-top-left-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
+    font-size: medium;
+    padding: 8px;
+    /*margin-bottom: 100px;*/
+    /*-moz-border-radius: 6px 6px 0 0;*/
+    /*-webkit-border-top-left-radius: 6px;*/
+    /*-webkit-border-top-right-radius: 6px;*/
 }
 #mvup {
     opacity: 0.5;
@@ -51,17 +61,13 @@
 body {
     /*margin: 20px;*/
 }
-#mainmenu{
+#menu{
     border-bottom: 1px solid darkgray;
-    margin: 0;
-    width: 100%;
-    opacity: 0.9;
-
-    /*border: 1px solid #000000;*/
+    background-color: #ffffff;
+    padding: 30px;
 }
-
-
 ul.menu {
+
     /*width: 100%;*/
     text-align: center;
     /*margin-left: -100px;*/
@@ -83,11 +89,12 @@ ul.menu {
 }
 
 ul.menu li {
-    margin-top: 40px;
+
+
     float: left;
     list-style: none;
     /*border-right: 1px solid #4f4f4f;*/
-    position: relative;
+    /*position: relative;*/
     padding-right: 15px ;
 }
 
@@ -103,7 +110,7 @@ ul.menu li a {
 }
 
 ul.menu li a:hover {
-    background-color:white;
+    background-color:#e5eCf9;
 }
 
 ul.menu li:first-child a:hover {
@@ -119,7 +126,6 @@ ul.menu li ul {
 ul.menu li:hover ul {
     display: block;
     position: absolute;
-
     border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
@@ -140,7 +146,7 @@ ul.menu li:hover ul li a {
 }
 
 ul.menu li:hover ul li a:hover {
-    background-color: transparent;
+    background-color: #e5eCf9;
     color: orange;
 }
 
@@ -282,13 +288,21 @@ body
     z-index: 1;
     position: relative;
 }
+#mainmenu{
+    border-bottom: 1px solid darkgray;
+    margin: 0;
+    width: 100%;
+    opacity: 0.9;
+
+    /*border: 1px solid #000000;*/
+}
 #mainmenu
 {
     /*margin-left:100px;*/
     float: left;
    /*// display: inline;*/
     z-index: 20;
-    position: fixed;
+    /*position: fixed;*/
     height: 100px;
 	background:#ffffff;
 }

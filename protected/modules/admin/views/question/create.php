@@ -5,4 +5,4 @@
 
 <h1>Create Question</h1>
 
-<?php $this->renderPartial('application.modules.admin.views.question._form', array('model'=>$model,'questions'=>$questions)); ?>
+<?php $this->renderPartial('application.modules.admin.views.question._form', array('model'=>$model)); ?>
