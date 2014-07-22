@@ -22,7 +22,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.js" type="text/javascript"></script>
 
-
+<!--    <script src="--><?php //echo Yii::app()->request->baseUrl; ?><!--/js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
     <!-- <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.9.1.min.js" type="text/javascript"></script> -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/single-0.1.0.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.easing.js" type="text/javascript"></script>
@@ -68,7 +68,7 @@
         <li><a href="#sites">Создание сайтов</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#tarif">Тарифы</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#faq">Задать вопрос</a></li>
         <li><a href="#contact">Контакты</a></li>
         <?php if (!Yii::app()->user->isGuest): ?>
             <li><a href="javascript:void(0)" onclick="function(0);">Управление</a>
@@ -83,28 +83,28 @@
     </ul>
 </div>
 
-<div id="menu" align="center" class="hidden-menu">
-
-    <a href="<?php Yii::app()->createUrl('allinweb/'); ?>"><img src="/images/logo_2.png" id="lg"></a>
-
-    <ul class="menu">
-        <li><a href="#sites">Создание сайтов</a></li>
-        <li><a href="#portfolio">Портфолио</a></li>
-        <li><a href="#tarif">Тарифы</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Контакты</a></li>
-        <?php if (!Yii::app()->user->isGuest): ?>
-            <li><a href="javascript:void(0)" onclick="function(0);">Управление</a>
-                <ul>
-                    <li><a href="<?php echo Yii::app()->createUrl('/admin/site/index'); ?>" class="links">Управление
-                            контентом</a></li>
-                    <li><?php echo CHtml::link('Вийти', array('site/logout')) ?></li>
-                </ul>
-            </li>
-        <?php endif; ?>
-
-    </ul>
-</div>
+<!--<div id="menu" align="center" class="hidden-menu">-->
+<!---->
+<!--    <a href="--><?php //Yii::app()->createUrl('allinweb/'); ?><!--"><img src="/images/logo_2.png" id="lg"></a>-->
+<!---->
+<!--    <ul class="menu">-->
+<!--        <li><a href="#sites">Создание сайтов</a></li>-->
+<!--        <li><a href="#portfolio">Портфолио</a></li>-->
+<!--        <li><a href="#tarif">Тарифы</a></li>-->
+<!--        <li><a href="#faq">Задать вопрос</a></li>-->
+<!--        <li><a href="#contact">Контакты</a></li>-->
+<!--        --><?php //if (!Yii::app()->user->isGuest): ?>
+<!--            <li><a href="javascript:void(0)" onclick="function(0);">Управление</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="--><?php //echo Yii::app()->createUrl('/admin/site/index'); ?><!--" class="links">Управление-->
+<!--                            контентом</a></li>-->
+<!--                    <li>--><?php //echo CHtml::link('Вийти', array('site/logout')) ?><!--</li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--        --><?php //endif; ?>
+<!---->
+<!--    </ul>-->
+<!--</div>-->
 
 <div id="single">
 
@@ -142,7 +142,7 @@
 
     <div data-target="faq" id="faq">
         <div class="content-resizer">
-            <h2 class="message">FAQ.</h2>
+            <h2 class="message">FAQ/ЧаВо</h2>
 
             <?php $this->renderPartial('application.modules.admin.views.question._form', array('model' => $question), false, true); ?>
 
@@ -150,7 +150,7 @@
             <span id="accordion">
 <!--                <h2>Ответы</h2>-->
                 <?php foreach ($questions as $question): ?>
-                    <h3 id="h3"><?php echo "<a href='#answer" . $question->id . "' id='plus'>+</a>" . $question->question; ?></h3>
+                    <h3 id="h3"><?php echo "<a href='#answer" . $question->id . "' id='plus'><img src='images/plus.png'></a>" . $question->question; ?></h3>
                     <div class="answers" id="answer<?php echo $question->answer->question_id; ?>">
                         <?php echo "<span id='answer'>" . $question->answer->body . "</span>"; ?>
                     </div>

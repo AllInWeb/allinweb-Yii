@@ -48,8 +48,8 @@
 		// Resize all the targets div
 		$(element).children("div[data-target]").each(function(){
 			$(this).css({
-				"width" : windowWidth,
-				"height": windowHeight
+				"width" : windowWidth
+//				"height":1000      //HEIGHT OF THE EACH DIV WITH DATA YOU CAN CHANGE IT VALUE!!!!!
 			});
 		});
 
@@ -102,9 +102,9 @@
 
 	// function to scroll the page to a section
 	function goToSection(link, opts) {
-
+//THERE YO CAN CHANGE THE DISTANCE TO TOP OF DIV WHERE YOU WANT TO MOVE
 		var goingTo 		= $(link).attr('data-link'); // get the data-link value
-		var targetPosition 	= $('[data-target="'+goingTo+'"]').position().top; // get the position of the target
+		var targetPosition 	= $('[data-target="'+goingTo+'"]').position().top + 180; // get the position of the target
 
 		// jQuery Easing animation
 		$("html, body").animate({

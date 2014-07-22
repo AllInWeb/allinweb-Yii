@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery GreyScale Plugin</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="greyScale.js"></script>
+  </head>
+  <style>
+    a {
+      display: block;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <a href="image.png">
+      <img src="image.jpg" alt="Image" class="greyScale" />
+    </a>
+    <a href="http://www.pryde-design.co.uk">
+      <img src="http://www.pryde-design.co.uk/pd-header.png" alt="Image" class="greyScale" />
+    </a>
+    <script>
+      $(function() {
+        // fade in the grayscaled images to avoid visual jump
+        $('.greyScale').hide().fadeIn(1000);
+      });
+      // user window.load to ensure images have been loaded
+      $(window).load(function () {
+        $('.greyScale').greyScale({
+          // call the plugin with non-defult fadeTime (default: 400ms)
+          fadeTime: 500,
+          reverse: false
+        });
+      });
+    </script>
+  </body>
+</html>
+

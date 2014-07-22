@@ -2,38 +2,58 @@
  * Created by viktor on 7/15/14.
  */
 
-/**
- * Остановить скроллинг
- */
-$(function() {
-    $(window).bind('mousewheel', function() {
+$(document).ready(function () {
+
+    /**
+     * Остановить скроллинг
+     */
+    $(window).bind('mousewheel', function () {
         $("html, body").stop();
     });
-});
 
-$(document).ready(function () {
-    $(function(){
-        $("#single").single();});
-    // $("#carousel").infiniteCarousel({});
+    /**
+     * одностраничник
+     */
+    $("#single").single();
+
+
+    /**
+     * карусель
+     */
     $('#carousel').infiniteCarousel({
         displayTime: 5000,
         textholderHeight: .30,
         displayProgressBar: false
 
     });
-
+    /**
+     * Показать стрелку вверх
+     * @type {*|jQuery|HTMLElement}
+     */
+    var $mvup = $('#mvup');
     $(document).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('#mvup').show();
-        } else {
-            $('#mvup').hide();
+        if ($(this).scrollTop() < 100) {
+
+            $mvup.removeClass('moveUp');
+            return;
         }
+        if ($mvup.hasClass('moveUp')) {
+            return;
+        }
+        $mvup.addClass('moveUp').show();
     });
 
+    /**
+     * движение наверх
+     */
     $('#mvup').click(function () {
         $('body,html').animate({scrollTop: 0}, 400);
         return false;
     });
+
+    /**
+     * Сролинг по блокам
+     */
     $("#menu li a, #menu li ul li a").click(function () {
         var selected = $(this).attr('href');
         var offset = $(selected).offset();
@@ -42,29 +62,43 @@ $(document).ready(function () {
         return false;
     });
 
+    /**
+     * аккордион
+     */
+
     $('#h3 a').click(function () {
-        var current = $(this).attr('href');
+        var $link = $(this);
+        var current = $link.attr('href');
         var id = current.slice(1, current.length);
         $('div[id =' + id + ']').toggle();
 
+        if ($link.hasClass('minus')) {
 
-        return false;
-    });
+            $link.html('<img src="images/plus.png">').removeClass('minus').parent().css({"border-bottom": "1px solid gray"});
 
-        $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) {
-            $('.hidden-menu').show().animate({marginTop: '-175px'}, 10);
         } else {
-            $('.hidden-menu').hide();
+            $link.html('<img src="images/minus.png">').addClass('minus').parent().css({"border-bottom": 0});
+
         }
+        return false;
+
     });
-//    $(window).scroll(function () {
-//        if ($(this).scrollTop() > 100) {
-//            $('.hidden-menu').show();
-//            $('.hidden-menu').animate({
-//                marginTop: '-180px'}, 10);
-//        } else {
-//            $('.hidden-menu').hide();
-//        }
-//    });
+
+    /**
+     * для меню
+     * @type {*|jQuery|HTMLElement}
+     */
+    var $menu = $('#menu');
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() < 150) {
+            if ($menu.hasClass('fixed-menu')) $menu.removeClass('fixed-menu');
+
+            return;
+        }
+        if ($menu.hasClass('fixed-menu')) return;
+        $menu.addClass('fixed-menu');
+
+    });
 });

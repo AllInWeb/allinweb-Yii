@@ -31,7 +31,7 @@
 				var imgWidth = $('img:first', obj).width();
 				var autopilot = 1;
 			
-				$('p', obj).hide(); // Hide any text paragraphs in the carousel
+//				$('p', obj).hide(); // Hide any text 18.07.2014graphs in the carousel
 				$(obj).width(imgWidth).height(imgHeight);
 			
 				// Build progress bar
@@ -48,11 +48,11 @@
 			
 				// Build textholder div thats as wide as the carousel and 20%-25% of the height
 				$('#car').append(
-                    '<div id="textholder'+randID+'" class="textholder" style="margin-bottom:'+-imgHeight*o.textholderHeight+'px;margin-top:70px;margin-left:140px;left:'+$(obj).css('paddingLeft')+'">' +
+                    '<div id="textholder'+randID+'" class="textholder" style="margin-bottom:'+-imgHeight*o.textholderHeight+'px;margin-top:70px;margin-left:130px;left:'+$(obj).css('paddingLeft')+'">' +
                     '</div>');
 				var correctTHWidth = parseInt($('#textholder'+randID).css('paddingTop'));
 				var correctTHHeight = parseInt($('#textholder'+randID).css('paddingRight'));
-				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).css({'backgroundColor':'#FFF','opacity':'0.9'});
+				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).height((imgHeight*o.textholderHeight)-(correctTHHeight * 2)).css({'backgroundColor':'#FFF','opacity':'0.9'});
 				showtext($('li:eq(1) p', obj).html());
 			
 				// Prev/next button(img) 
@@ -115,9 +115,9 @@
 							html = '<img style="position:absolute;top:2px;right:18px;display:none;cursor:pointer" src="/images/carousel/images/down.png" title="Minimize" alt="minimize" id="min" /><img style="position:absolute;top:2px;right:18px;display:none;cursor:pointer" src="/images/carousel/images/up.png" title="Maximize" alt="maximize" id="max" />';
 							html += '<img style="position:absolute;top:2px;right:6px;display:none;cursor:pointer" src="/images/carousel/images/close.png" title="Close" alt="close" id="close" />';
 							$('#textholder'+randID).append(html);
-//							$('#min').fadeIn(250).click(function(){$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+24+'px'},500,function(){$("#min,#max").toggle();});});
+							$('#min').fadeIn(250).click(function(){$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+24+'px'},500,function(){$("#min,#max").toggle();});});
 							$('#max').click(function(){$('#textholder'+randID).animate({marginBottom:'0px'},500,function(){$("#min,#max").toggle();});});
-//							$('#close').fadeIn(250).click(function(){$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);});
+							$('#close').fadeIn(250).click(function(){$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);});
 						}
 				}
 				function anim(direction)
@@ -127,7 +127,8 @@
 					$('#btn_lt'+randID).fadeOut(500);
 					
 					// animate textholder out of frame
-					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
+//					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
+
 					//?? Fade out play/pause?
 					$('#pause_btn'+randID).fadeOut(250);
 					$('#play_btn'+randID).fadeOut(250);

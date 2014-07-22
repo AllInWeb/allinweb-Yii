@@ -171,22 +171,22 @@
 
         $(document).ready(function () {
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#mvup').fadeIn();
-                } else {
-                    $('#mvup').fadeOut();
-                }
-            });
-            $('#mvup').click(function () {
-                $('body,html').animate({scrollTop: 0}, 400);
-                return false;
-            });
-            $("#menu li a, #menu li ul li a").click(function () {
-                var selected = $(this).attr('href');
-                $.scrollTo(selected, 555);
-                return false;
-            });
+//            $(window).scroll(function () {
+//                if ($(this).scrollTop() > 100) {
+//                    $('#mvup').fadeIn();
+//                } else {
+//                    $('#mvup').fadeOut();
+//                }
+//            });
+//            $('#mvup').click(function () {
+//                $('body,html').animate({scrollTop: 0}, 400);
+//                return false;
+//            });
+//            $("#menu li a, #menu li ul li a").click(function () {
+//                var selected = $(this).attr('href');
+//                $.scrollTo(selected, 555);
+//                return false;
+//            });
         });
    </script>
 <a href="#" id="mvup"><img src="images/up.png" width="70px" height="70px"></a>

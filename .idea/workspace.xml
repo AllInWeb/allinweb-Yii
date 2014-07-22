@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="70" mnemonic="5" />
+    <bookmark url="file://$PROJECT_DIR$/css/main.css" line="74" mnemonic="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2ea32c8-4ee0-4ecf-8d7b-16303875d66a" name="Default" comment="" />
@@ -29,9 +29,24 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="0" selection-start="8398" selection-end="8398" vertical-scroll-proportion="-79.333336" vertical-offset="1404" max-vertical-offset="4356">
+            <state line="22" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="-4.6666665" vertical-offset="270" max-vertical-offset="4356">
               <folding>
-                <marker date="1405587111000" expanded="true" signature="801:839" placeholder="..." />
+                <marker date="1406009597000" expanded="true" signature="801:839" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.infinitecarousel.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/jquery.infinitecarousel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="0" selection-start="6597" selection-end="6598" vertical-scroll-proportion="0.25796178" vertical-offset="2016" max-vertical-offset="3330">
+              <folding>
+                <marker date="1406011739000" expanded="false" signature="2364:2392" placeholder="..." />
+                <marker date="1406011739000" expanded="false" signature="2590:2617" placeholder="..." />
+                <marker date="1406011739000" expanded="false" signature="5340:5404" placeholder="..." />
+                <marker date="1406011739000" expanded="false" signature="5500:5564" placeholder="..." />
+                <marker date="1406011739000" expanded="false" signature="5677:5740" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -40,43 +55,7 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1044">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="110" selection-end="110" vertical-scroll-proportion="0.20895523" vertical-offset="0" max-vertical-offset="8946">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="29" selection-start="4221" selection-end="4221" vertical-scroll-proportion="-14.259259" vertical-offset="1829" max-vertical-offset="4374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/QuestionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="35" selection-start="3126" selection-end="3126" vertical-scroll-proportion="-3.5925925" vertical-offset="1775" max-vertical-offset="4734">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="38" selection-start="705" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="2214">
+            <state line="8" column="23" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
@@ -98,12 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/modules/site/SiteModule.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
-        <option value="$PROJECT_DIR$/protected/views/portfolio/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/carousel/index.php" />
-        <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/AdminController .php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/question/answers.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/models/Answers.php" />
         <option value="$PROJECT_DIR$/protected/.htaccess" />
@@ -111,13 +84,11 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/question/pages/answers.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/AnswersController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/question/admin.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/question/create.php" />
         <option value="$PROJECT_DIR$/protected/views/tarif/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/PortfolioController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PortfolioController.php" />
         <option value="$PROJECT_DIR$/css/app.css" />
-        <option value="$PROJECT_DIR$/js/single-0.1.0.js" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/models/Question.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/models/Carousel.php" />
@@ -125,11 +96,8 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CarouselController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/question/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/user/index.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/portfolio/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/models/Tarif.php" />
-        <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/migrations/m140716_094904_create_tbl_aliases.php" />
         <option value="$PROJECT_DIR$/protected/messages/ru/aliases.php" />
@@ -137,24 +105,35 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/tarif/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/tarif/addcolumn.php" />
         <option value="$PROJECT_DIR$/protected/models/Tarif.php" />
-        <option value="$PROJECT_DIR$/js/jquery.infinitecarousel.js" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/carousel/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/tarif/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/models/Question.php" />
         <option value="$PROJECT_DIR$/js/yoxview/yoxview.css" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/question/_form.php" />
+        <option value="$PROJECT_DIR$/js/jquery.BlackAndWhite.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/portfolio/index.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/carousel/index.php" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/js/single-0.1.0.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/answers/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/user/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/tarif/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/question/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/carousel/admin.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/portfolio/admin.php" />
+        <option value="$PROJECT_DIR$/js/jquery.infinitecarousel.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1301" />
+    <option name="x" value="65" />
     <option name="y" value="24" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
@@ -232,51 +211,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,6 +238,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tarif" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -414,7 +391,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="carousel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,97 +421,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="carousel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="answers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,6 +437,9 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -564,7 +454,11 @@
       <recent name="$PROJECT_DIR$/protected/views/question/pages" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.modules">
+    <configuration default="false" name="modules" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/protected/modules" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -578,7 +472,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.modules" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.modules" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -607,7 +508,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1301" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -627,7 +528,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.028315946" sideWeight="0.49961567" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.49961567" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.86885244" sideWeight="0.49961567" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -650,36 +551,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/models/Tarif.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="19" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="2916" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/AdminController .php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="287" selection-end="287" vertical-scroll-proportion="0.12224109" vertical-offset="216" max-vertical-offset="828" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/adminpanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1872" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1098" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/answers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="631" selection-end="631" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="126" selection-end="126" vertical-scroll-proportion="0.116883114" vertical-offset="0" max-vertical-offset="616" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="0" selection-start="1299" selection-end="2082" vertical-scroll-proportion="1.6173044" vertical-offset="0" max-vertical-offset="2106" />
@@ -688,11 +559,6 @@
     <entry file="file://$PROJECT_DIR$/protected/models/Answers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="118" column="29" selection-start="3391" selection-end="3391" vertical-scroll-proportion="0.8013582" vertical-offset="1652" max-vertical-offset="2376" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="55" selection-start="1656" selection-end="1656" vertical-scroll-proportion="0.7465278" vertical-offset="524" max-vertical-offset="1152" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/AnswersController.php">
@@ -745,11 +611,6 @@
         <state line="48" column="56" selection-start="1372" selection-end="1372" vertical-scroll-proportion="-0.029315962" vertical-offset="864" max-vertical-offset="3582" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/single-0.1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="15" selection-start="1227" selection-end="1227" vertical-scroll-proportion="-15.633333" vertical-offset="467" max-vertical-offset="2844" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1638" />
@@ -773,21 +634,6 @@
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.08794788" vertical-offset="0" max-vertical-offset="614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.08985025" vertical-offset="0" max-vertical-offset="1116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.26298702" vertical-offset="0" max-vertical-offset="1314" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.4496528" vertical-offset="461" max-vertical-offset="2394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/migrations/m140716_094904_create_tbl_aliases.php">
@@ -830,24 +676,9 @@
         <state line="69" column="6" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.78125" vertical-offset="702" max-vertical-offset="1278" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.625" vertical-offset="270" max-vertical-offset="1188" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="4" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.8125" vertical-offset="162" max-vertical-offset="4590" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1156" column="7" selection-start="17347" selection-end="17347" vertical-scroll-proportion="0.33279222" vertical-offset="20603" max-vertical-offset="68634" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/portfolio/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="334" selection-end="334" vertical-scroll-proportion="-0.0625" vertical-offset="324" max-vertical-offset="936" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/index.php">
@@ -860,16 +691,6 @@
         <state line="18" column="0" selection-start="732" selection-end="732" vertical-scroll-proportion="0.5500849" vertical-offset="0" max-vertical-offset="1098" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.infinitecarousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="54" selection-start="2192" selection-end="2192" vertical-scroll-proportion="-8.766666" vertical-offset="691" max-vertical-offset="3456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/carousel/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="396" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/yoxview/yoxview.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="15" selection-start="281" selection-end="281" vertical-scroll-proportion="0.37261146" vertical-offset="0" max-vertical-offset="4338" />
@@ -877,45 +698,155 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="705" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="2214">
-          <folding />
-        </state>
+        <state line="32" column="38" selection-start="705" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="2214" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="35" selection-start="3126" selection-end="3126" vertical-scroll-proportion="-3.5925925" vertical-offset="1775" max-vertical-offset="4734">
-          <folding />
-        </state>
+        <state line="104" column="35" selection-start="3126" selection-end="3126" vertical-scroll-proportion="-3.5925925" vertical-offset="1775" max-vertical-offset="4734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/answers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="631" selection-end="631" vertical-scroll-proportion="0.58064514" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="29" selection-start="4221" selection-end="4221" vertical-scroll-proportion="-14.259259" vertical-offset="1829" max-vertical-offset="4374">
+        <state line="233" column="0" selection-start="9270" selection-end="9270" vertical-scroll-proportion="0.0" vertical-offset="4194" max-vertical-offset="4374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/a898d977/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2065" column="28" selection-start="56100" selection-end="56100" vertical-scroll-proportion="0.06467662" vertical-offset="36915" max-vertical-offset="170388">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="0" selection-start="8398" selection-end="8398" vertical-scroll-proportion="-79.333336" vertical-offset="1404" max-vertical-offset="4356">
-          <folding>
-            <marker date="1405587111000" expanded="true" signature="801:839" placeholder="..." />
-          </folding>
+        <state line="35" column="0" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.125" vertical-offset="558" max-vertical-offset="1188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="7" selection-start="1405" selection-end="1405" vertical-scroll-proportion="5.3333335" vertical-offset="1080" max-vertical-offset="2376" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="17" selection-start="5832" selection-end="6036" vertical-scroll-proportion="1.4375" vertical-offset="2556" max-vertical-offset="4590">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/portfolio/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="4" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.33800352" vertical-offset="419" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1044">
+        <state line="8" column="23" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/single-0.1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.41791046" vertical-offset="1566" max-vertical-offset="2844">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="110" selection-end="110" vertical-scroll-proportion="0.20895523" vertical-offset="0" max-vertical-offset="8946">
+        <state line="7" column="11" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8586">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="0.7077922" vertical-offset="320" max-vertical-offset="1944">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/carousel/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.59900165" vertical-offset="0" max-vertical-offset="601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/question/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="24" selection-start="381" selection-end="381" vertical-scroll-proportion="0.5" vertical-offset="54" max-vertical-offset="1062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/tarif/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="370" selection-end="370" vertical-scroll-proportion="0.5500849" vertical-offset="0" max-vertical-offset="954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/user/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="373" selection-end="373" vertical-scroll-proportion="0.36672327" vertical-offset="108" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/carousel/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="380" selection-end="380" vertical-scroll-proportion="0.5500849" vertical-offset="0" max-vertical-offset="864">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/answers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="39" selection-start="407" selection-end="422" vertical-scroll-proportion="0.23778501" vertical-offset="214" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/portfolio/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="383" selection-end="383" vertical-scroll-proportion="0.5276873" vertical-offset="0" max-vertical-offset="846">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="-4.6666665" vertical-offset="270" max-vertical-offset="4356">
+          <folding>
+            <marker date="1406009597000" expanded="true" signature="801:839" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.infinitecarousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="0" selection-start="6597" selection-end="6598" vertical-scroll-proportion="0.25796178" vertical-offset="2016" max-vertical-offset="3330">
+          <folding>
+            <marker date="1406011739000" expanded="false" signature="2364:2392" placeholder="..." />
+            <marker date="1406011739000" expanded="false" signature="2590:2617" placeholder="..." />
+            <marker date="1406011739000" expanded="false" signature="5340:5404" placeholder="..." />
+            <marker date="1406011739000" expanded="false" signature="5500:5564" placeholder="..." />
+            <marker date="1406011739000" expanded="false" signature="5677:5740" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
