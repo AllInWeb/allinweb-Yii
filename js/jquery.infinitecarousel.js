@@ -127,7 +127,7 @@
 					$('#btn_lt'+randID).fadeOut(500);
 					
 					// animate textholder out of frame
-					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
+//					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
 					//?? Fade out play/pause?
 					$('#pause_btn'+randID).fadeOut(250);
 					$('#play_btn'+randID).fadeOut(250);

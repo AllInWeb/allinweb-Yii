@@ -1,26 +1,15 @@
 <?php
-/* @var $this SiteController */
-
 $this->pageTitle = Yii::app()->name . ' - Admin';
-
-?>
-<style>
-    #adminka h1, .admin-items h3 {
+Yii::app()->clientScript->registerCss('admin-panel','
+   #adminka h1, .admin-items h3 {
         text-align: center;
         color: orange;
-    }
-    .admin-items{
+   }
+   .admin-items{
         border: 0.1em solid orange;
         padding: 15px;
-    }
-    /*.admin-items:nth-child(odd) {*/
-        /*background-color: khaki;*/
-    /*}*/
-
-    /*.admin-items:nth-child(even) {*/
-        /*background-color: lightgreen;*/
-    /*}*/
-    #admin-btn{
+   }
+   #admin-btn{
         text-decoration:none;
         text-align:center;
         padding:11px 32px;
@@ -36,8 +25,8 @@ $this->pageTitle = Yii::app()->name . ' - Admin';
         -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;
         box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
 
-    }
-    #admin-btn:hover{
+   }
+   #admin-btn:hover{
          padding:11px 32px;
          border:solid 1px #e67409;
          -webkit-border-radius:4px;
@@ -51,8 +40,10 @@ $this->pageTitle = Yii::app()->name . ' - Admin';
          -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 5px #ffffff;
          box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;
 
-     }
-</style>
+   }
+');
+?>
+
 <div id="adminka">
     <h1>Админ панель</h1>
     <?php if (Yii::app()->user->checkAccess(2)): ?>
@@ -82,11 +73,7 @@ $this->pageTitle = Yii::app()->name . ' - Admin';
     </div>
     <div id="admin-faq" class="admin-items">
         <h3>Вопросы/ответы</h3>
-        <?php
-        $criteria = new CDbCriteria();
-        $criteria->condition = "answered = 0";
-        ?>
-        <?php echo CHtml::link("Все вопросы(Новых-" . count(Question::model()->findAll($criteria)) . ")", array('question/admin'),array('id'=>'admin-btn')); ?>
+        <?php echo CHtml::link("Все вопросы(Новых-" . $count . ")", array('question/admin'),array('id'=>'admin-btn')); ?>
         <?php echo CHtml::link("Все ответы", array('answers/admin'),array('id'=>'admin-btn')); ?>
     </div>
 

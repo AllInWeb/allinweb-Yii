@@ -7,7 +7,7 @@
 
 #lg:hover {
     opacity: 0.7;
-    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+    /*filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);*/
 }
 
 #carousel {

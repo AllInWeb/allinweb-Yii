@@ -2,22 +2,6 @@
 
 class QuestionController extends Controller
 {
-    public function actions()
-    {
-        return array(
-            // page action renders "static" pages stored under 'protected/views/site/pages'
-            // They can be accessed via: index.php?r=site/page&view=FileName
-//            'page'=>array(
-//                'class'=>'CViewAction',
-//                'defaultView'=>'answers'
-//            ),
-        );
-    }
-    /**
-     * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-     * using two-column layout. See 'protected/views/layouts/column2.php'.
-     */
-    //public $layout='//layouts/column2';
 
     /**
      * @return array action filters
@@ -47,10 +31,6 @@ class QuestionController extends Controller
                 'users' => array(Yii::app()->user->name),
                 'roles' => array(2, 1),
             ),
-            /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete'),
-                'users'=>array('admin'),
-            ),*/
             array('deny', // deny all users
                 'users' => array('*'),
             ),
@@ -78,16 +58,11 @@ class QuestionController extends Controller
         $criteria->condition = 'answered = 1 AND actual = 1';
         $criteria->limit = 2;
         $questions = Question::model()->findAll($criteria);
-
-
         $model = new Question;
-// Uncomment the following line if AJAX validation is needed
-//		 $this->performAjaxValidation($model);
 
         $this->render('create', array(
             'model' => $model,
             'questions' => $questions
-
         ));
     }
 
@@ -96,13 +71,11 @@ class QuestionController extends Controller
      */
     public function actionAsq()
     {
-
         $model = new Question;
 
         if (isset($_POST['Question'])) {
             $model->attributes = $_POST['Question'];
-
-            if($model->validate()){
+            if ($model->validate()) {
                 if ($model->save(false)) {
                     $question = $model->question;
                     $headers = "From:<{$model->email}>\r\n" .
@@ -110,58 +83,16 @@ class QuestionController extends Controller
                         "MIME-Version: 1.0\r\n" .
                         "Content-Type: text/plain; charset=UTF-8";
                     $message = "Вы задали вопрос  на сайте компании 'All in Web'.\nТекст вопроса:" . $question . "\nВам ответят в кратчайшие сроки, с уважением команда компании 'All in Web'";
-
                     mail($model->email, "Вопрос компании 'All in Web'", $message, $headers);
-
                     echo CJSON::encode(array('code' => 300, 'message' => 'Ваш вопрос успешно задан!'));
-                    //echo "<h2>Ваш вопрос успешно задан!</h2>";
-                } else {
-                 //   echo CJSON::encode(array('code' => 500, 'message' => 'Вопрос не задан! Возникли проблемы!'));
-                    //  echo "<h2>Вопрос не задан! Возникли проблемы!</h2>";
                 }
-               // echo CJSON::encode(array('code' => 200, 'message' => 'Валидация успешна'));
-
-
-             }
-            else{
+            }
+            else {
                 echo CJSON::encode(array('code' => 400, 'errors' => $model->getErrors()));
             }
-
         }
-
-
-//        if (isset($_POST['Question'])) {
-//            $model->attributes = $_POST['Question'];
-//
-//            if($model->validate()){
-//
-//                echo CJSON::encode(array('code' => 200, 'message' => 'Валидация успешна'));
-//             }
-//            else{
-//                echo CJSON::encode(array('code' => 400, 'errors' => $model->getErrors()));
-//            }
-//
-//            if ($model->save(false)) {
-//
-//
-//
-//                $question = $model->question;
-//                $headers = "From:<{$model->email}>\r\n" .
-//                    "Reply-To: {$model->email}\r\n" .
-//                    "MIME-Version: 1.0\r\n" .
-//                    "Content-Type: text/plain; charset=UTF-8";
-//                $message = "Вы задали вопрос  на сайте компании 'All in Web'.\nТекст вопроса:" . $question . "\nВам ответят в кратчайшие сроки, с уважением команда компании 'All in Web'";
-//
-//                mail($model->email, "Вопрос компании 'All in Web'", $message, $headers);
-//
-//                echo CJSON::encode(array('code' => 300, 'message' => 'Ваш вопрос успешно задан!'));
-//                //echo "<h2>Ваш вопрос успешно задан!</h2>";
-//            } else {
-//                echo CJSON::encode(array('code' => 500, 'message' => 'Вопрос не задан! Возникли проблемы!'));
-//              //  echo "<h2>Вопрос не задан! Возникли проблемы!</h2>";
-//            }
-//        }
     }
+
     /**
      * Updates a particular model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -170,19 +101,13 @@ class QuestionController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->loadModel($id);
-
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-
         if (isset($_POST['Question'])) {
             $model->attributes = $_POST['Question'];
             $model->actual = $_POST['Question']['actual'];
-
-            if ($model->save())
-
+            if ($model->save()) {
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
-
         $this->render('update', array(
             'model' => $model,
         ));
@@ -196,7 +121,6 @@ class QuestionController extends Controller
     public function actionDelete($id)
     {
         $this->loadModel($id)->delete();
-
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -220,9 +144,9 @@ class QuestionController extends Controller
     {
         $model = new Question('search');
         $model->unsetAttributes(); // clear any default values
-        if (isset($_GET['Question']))
-            $model->attributes = $_GET['Question'];
-
+        if (isset($_GET['Question'])) {
+            $this->redirect(array('view', 'id' => $model->id));
+        }
         $this->render('admin', array(
             'model' => $model,
         ));

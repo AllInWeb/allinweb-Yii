@@ -1,43 +1,28 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: viktor
- * Date: 7/1/14
- * Time: 4:30 PM
- */
 
 return array(
     'guest' => array(
-        'type' => CAuthItem::TYPE_ROLE,
+        'type'        => CAuthItem::TYPE_ROLE,
         'description' => 'Guest',
-        'bizRule' => null,
-        'data' => null
+        'bizRule'     => null,
+        'data'        => null
     ),
-   /* 'user' => array(
-        'type' => CAuthItem::TYPE_ROLE,
-        'description' => 'User',
-        'children' => array(
-            'guest', // унаследуемся от гостя
-        ),
-        'bizRule' => null,
-        'data' => null
-    ),*/
     '1' => array(
-        'type' => CAuthItem::TYPE_ROLE,
+        'type'        => CAuthItem::TYPE_ROLE,
         'description' => 'Moderator',
-        'children' => array(
+        'children'    => array(
             'user',          // позволим модератору всё, что позволено пользователю
         ),
-        'bizRule' => null,
-        'data' => null
+        'bizRule'     => null,
+        'data'        => null
     ),
     '2' => array(
-        'type' => CAuthItem::TYPE_ROLE,
+        'type'        => CAuthItem::TYPE_ROLE,
         'description' => 'Administrator',
-        'children' => array(
+        'children'    => array(
             'moderator',         // позволим админу всё, что позволено модератору
         ),
-        'bizRule' => null,
-        'data' => null
+        'bizRule'     => null,
+        'data'        => null
     ),
 );

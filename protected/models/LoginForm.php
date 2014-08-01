@@ -7,54 +7,52 @@
  */
 class LoginForm extends CFormModel
 {
-	public $username;
-	public $password;
-	public $rememberMe;
+    public $username;
+    public $password;
+    public $rememberMe;
 
-	private $_identity;
+    private $_identity;
 
-	/**
-	 * Declares the validation rules.
-	 * The rules state that username and password are required,
-	 * and password needs to be authenticated.
-	 */
-	public function rules()
-	{
-		return array(
-			// username and password are required
-			array('username, password', 'required'),
-			// rememberMe needs to be a boolean
-			array('rememberMe', 'boolean'),
-			// password needs to be authenticated
-			array('password', 'authenticate'),
-		);
-	}
-
-	/**
-	 * Declares attribute labels.
-	 */
-	public function attributeLabels()
-	{
-		return array(
-			'rememberMe'=>'Remember me next time',
-		);
-	}
-
-	/**
-	 * Authenticates the password.
-	 * This is the 'authenticate' validator as declared in rules().
-	 */
-    public function authenticate($attribute,$params)
+    /**
+    * Declares the validation rules.
+    * The rules state that username and password are required,
+    * and password needs to be authenticated.
+    */
+    public function rules()
     {
+        return array(
+            array('username, password', 'required'),
+            array('rememberMe', 'boolean'),
+            array('password', 'authenticate'),
+        );
+    }
 
-        if(!$this->hasErrors())
+    /**
+    * Declares attribute labels.
+    */
+    public function attributeLabels()
+    {
+        return array(
+            'username'=>'Логин',
+            'password'=>'Пароль',
+            'rememberMe' => 'Запомнить меня в следующий раз',
+        );
+    }
+
+    /**
+    * Authenticates the password.
+    * This is the 'authenticate' validator as declared in rules().
+    */
+    public function authenticate($attribute, $params)
+    {
+        if (!$this->hasErrors())
         {
-            $this->_identity=new UserIdentity($this->username,$this->password);
+            $this->_identity = new UserIdentity($this->username, $this->password);
 
-            if($this->_identity->authenticate()==UserIdentity::ERROR_USERNAME_INVALID)
-                $this->addError('username','Incorrect username.');
-            else if($this->_identity->authenticate()==UserIdentity::ERROR_PASSWORD_INVALID)
-                $this->addError('password','Incorrect  password.');
+            if($this->_identity->authenticate() == UserIdentity::ERROR_USERNAME_INVALID)
+                $this->addError('username', 'Неправильный логин.');
+            else if($this->_identity->authenticate() == UserIdentity::ERROR_PASSWORD_INVALID)
+                $this->addError('password', 'Неправильный пароль.');
         }
     }
 
@@ -64,12 +62,12 @@ class LoginForm extends CFormModel
      */
     public function login()
     {
-        if($this->_identity===null)
+        if($this->_identity === null)
         {
-            $this->_identity=new UserIdentity($this->username,$this->password);
+            $this->_identity = new UserIdentity($this->username,$this->password);
             $this->_identity->authenticate();
         }
-        if($this->_identity->errorCode===UserIdentity::ERROR_NONE)
+        if($this->_identity->errorCode === UserIdentity::ERROR_NONE)
         {
             $duration=$this->rememberMe ? 3600*24*30 : 0; // 30 days
             Yii::app()->user->login($this->_identity,$duration);

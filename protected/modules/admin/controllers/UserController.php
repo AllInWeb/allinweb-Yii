@@ -3,12 +3,6 @@
 class UserController extends Controller
 {
     /**
-     * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-     * using two-column layout. See 'protected/views/layouts/column2.php'.
-     */
-   // public $layout = '//layouts/column2';
-
-    /**
      * @return array action filters
      */
     public function filters()
@@ -27,17 +21,13 @@ class UserController extends Controller
     public function accessRules()
     {
         return array(
-//            array('allow', // allow all users to perform 'index' and 'view' actions
-//                'actions' => array(),
-//                'users' => array('*'),
-//            ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'view','create', 'update', 'admin', 'delete'),
-                'users' => array(Yii::app()->user->name),
-                'roles' => array(2),
+                'actions' => array('index', 'view', 'create', 'update', 'admin', 'delete'),
+                'users'   => array(Yii::app()->user->name),
+                'roles'   => array(2),
             ),
             array('deny', // deny all users
-                'users' => array('*'),
+                'users'   => array('*'),
             ),
         );
     }
@@ -60,15 +50,9 @@ class UserController extends Controller
     public function actionCreate()
     {
         $model = new User;
-
-        // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model);
-
         if (isset($_POST['User'])) {
-
             $model->attributes = $_POST['User'];
-
-
             $name = $model->name;
             $password = $model->password;
             $headers = "From:<{$model->email}>\r\n" .
@@ -76,14 +60,10 @@ class UserController extends Controller
                 "MIME-Version: 1.0\r\n" .
                 "Content-Type: text/plain; charset=UTF-8";
             $message = "Вы зарегистрированы в качестве модератора на сайте компании All in Web. \n Ваш логин:" . $name . "\n Ваш пароль: " . $password . "\n Приятной работы.";
-
             mail($model->email, "Регистрация на сайте All in Web", $message, $headers);
-
             if ($model->save())
-
                 $this->redirect(array('view', 'id' => $model->id));
         }
-
         $this->render('create', array(
             'model' => $model,
         ));
@@ -97,16 +77,11 @@ class UserController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->loadModel($id);
-
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-
         if (isset($_POST['User'])) {
             $model->attributes = $_POST['User'];
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->id));
         }
-
         $this->render('update', array(
             'model' => $model,
         ));
@@ -120,7 +95,6 @@ class UserController extends Controller
     public function actionDelete($id)
     {
         $this->loadModel($id)->delete();
-
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -144,9 +118,9 @@ class UserController extends Controller
     {
         $model = new User('search');
         $model->unsetAttributes(); // clear any default values
-        if (isset($_GET['User']))
+        if (isset($_GET['User'])) {
             $model->attributes = $_GET['User'];
-
+        }
         $this->render('admin', array(
             'model' => $model,
         ));
