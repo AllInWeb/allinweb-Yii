@@ -1,0 +1,85 @@
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+.mvUp{
+   visibility: visible;
+}
+div #accordion {
+    color: orange;
+    margin-top: 200px;
+    text-align: left;
+}
+
+#qa-btn {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: orange; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: #269abc;
+    border: none;
+}
+
+#qa-btn:hover {
+    background: #eea236;
+}
+
+/* при наведении курсора мышки */
+#qa-btn:active {
+    background: orange;
+}
+
+/* при нажатии */
+#answer {
+    margin-left: 20px;
+}
+.answers {
+    display: none;
+    border-bottom: 1px solid gray;
+}
+
+.minus {
+    border-bottom: 0;
+}
+
+#h3 {
+    color: orange;
+    border-bottom: 1px solid grey;
+}
+
+.btn-normal {
+    top: 50%;
+    position: absolute;
+    vertical-align: middle;
+    right: -150px;
+}
+
+div#sites {
+    background: #ffffff;
+}
+
+div#portfolio {
+    background: #ffffff;
+}
+
+div#tarif {
+    background: #ffffff;
+}
+
+div#faq {
+    background: #ffffff;
+}
+
+div#contact {
+    background: #ffffff;
+}
+
+#bottom-footer{
+    position: relative;
+}
+
+

@@ -1,0 +1,58 @@
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/withinViewport.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.withinViewport.js"></script>
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<style>
+#test1,#test2,#test3,#test4 {
+height:700px;
+border-bottom:1px solid;
+}
+.active{
+background-colot:red;
+}
+
+</style>
+<?php
+/* @var $this SiteController */
+
+$this->pageTitle=Yii::app()->name;
+?>
+<script>
+$(document).ready(function(){
+		$("#lnk").scrollTop();
+		var len = $('.scroll').length
+
+
+    
+	$(document).scroll(function(){
+
+	
+		 for(i=0;i<=len;i++){  
+ 		   
+
+ 		  
+		
+
+		   $("#test"+i).show(); 
+		  
+		  
+ 		  
+		}           
+});
+});	
+
+</script>
+
+<div id="test1" class="scroll">
+	<p>test1</p>
+</div>
+<div id="test2" class="scroll" hidden="">
+	<p>test2</p>
+</div>
+<div id="test3" class="scroll" hidden="">
+	<p>test3</p>
+</div>
+<div id="test4" class="scroll" hidden="">
+	<p>test4</p>
+<a href="#" id="lnk">scroll</a>
+</div>
+

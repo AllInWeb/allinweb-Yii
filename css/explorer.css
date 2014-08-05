@@ -1,0 +1,42 @@
+#head {
+    height: 15px;
+}
+
+#lg {
+    float: left;
+    position: absolute;
+    top: 130px;
+    left: 270px;
+}
+
+#lg:hover {
+    opacity: 0.7;
+    -ms-opacity:0.7;
+    filter: alpha(opacity=50);
+}
+
+.menu {
+    /*padding-left: 400px;*/
+    margin-left: 500px;
+}
+
+#callback {
+    float: left;
+}
+
+#menu {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.fixedMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.fixedMenu #lg {
+    margin-top: -120px;
+}
