@@ -35,7 +35,16 @@
       <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="34" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="1434" max-vertical-offset="2052">
+            <state line="102" column="32" selection-start="2445" selection-end="2445" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2052">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.058252428" vertical-offset="0" max-vertical-offset="618">
               <folding />
             </state>
           </provider>
@@ -44,7 +53,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="53" selection-start="5086" selection-end="5086" vertical-scroll-proportion="0.0" vertical-offset="1571" max-vertical-offset="3150">
+            <state line="91" column="14" selection-start="5162" selection-end="5162" vertical-scroll-proportion="-60.666668" vertical-offset="0" max-vertical-offset="3150">
               <folding>
                 <marker date="1407158271559" expanded="true" signature="1915:1953" placeholder="..." />
               </folding>
@@ -52,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="1" selection-start="551" selection-end="551" vertical-scroll-proportion="0.067961164" vertical-offset="462" max-vertical-offset="1638">
+            <state line="32" column="23" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1638">
               <folding />
             </state>
           </provider>
@@ -134,8 +143,8 @@
         <option value="$PROJECT_DIR$/js/single-0.1.0.js" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/custom.js" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -725,9 +734,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="23" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="53" selection-start="5086" selection-end="5086" vertical-scroll-proportion="0.0" vertical-offset="1571" max-vertical-offset="3150">
+        <state line="91" column="14" selection-start="5162" selection-end="5162" vertical-scroll-proportion="-60.666668" vertical-offset="0" max-vertical-offset="3150">
           <folding>
             <marker date="1407158271559" expanded="true" signature="1915:1953" placeholder="..." />
           </folding>
@@ -736,21 +752,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="34" selection-start="2013" selection-end="2013" vertical-scroll-proportion="0.0" vertical-offset="1434" max-vertical-offset="2052">
+        <state line="102" column="32" selection-start="2445" selection-end="2445" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2052">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="14" selection-end="14" vertical-scroll-proportion="0.029126214" vertical-offset="0" max-vertical-offset="618">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="551" selection-end="551" vertical-scroll-proportion="0.067961164" vertical-offset="462" max-vertical-offset="1638">
+        <state line="2" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.058252428" vertical-offset="0" max-vertical-offset="618">
           <folding />
         </state>
       </provider>

@@ -100,7 +100,7 @@ $(function () {
          * для IE
          */
         if($.browser.msie){
-            $menu.attr('class','fixedMenu');
+            $menu.attr('class', 'fixedMenu');
         }
         if($menu.attr('class') == 'fixedMenu'){
           return;
