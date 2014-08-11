@@ -28,6 +28,7 @@ class Tarif extends CActiveRecord
      */
     public function rules()
     {
+//        $fields = implode(',', array_keys(Tarif::model()->attributeLabels()));
         return array(
             array('map, comments, basket, qa, map, comments, basket,
             cms, unlimpage, freefill, blog, visitstat, votes, rotator,
@@ -50,18 +51,17 @@ class Tarif extends CActiveRecord
      */
     public function attributeLabels()
     {
+        $columns = array();
+        $aliases = Aliases::model()->findAll();
+        foreach ($aliases as $alias) {
+            $columns[$alias->column] = $alias->alias;
+        }
 
+        return $columns;
     }
 
     /**
      * Retrieves a list of models based on the current search/filter conditions.
-     *
-     * Typical usecase:
-     * - Initialize the model fields with values from filter form.
-     * - Execute this method to get CActiveDataProvider instance which will filter
-     * models according to data in model fields.
-     * - Pass data provider to CGridView, CListView or any similar widget.
-     *
      * @return CActiveDataProvider the data provider that can return the models
      * based on the search/filter conditions.
      */

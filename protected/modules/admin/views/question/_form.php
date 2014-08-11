@@ -90,6 +90,7 @@ Yii::app()->clientScript->registerCss('question','
                             }
                             else if(data.code === 300){
                                 $('.flash-success').show().append('' +data.message +'<br>').delay(5000).fadeOut(700);
+                                $('#errors').hide();
                             }
                         }
                     });

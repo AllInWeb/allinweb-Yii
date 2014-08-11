@@ -38,7 +38,7 @@
 				if(o.displayProgressBar)
 				{
 					$(obj).append('<div id="progress'+randID+'" style="position:absolute;bottom:0;background:#bbb;left:'+$(obj).css('paddingLeft')+'"></div>');
-					$('#progress'+randID).width(imgWidth).height(5).css('opacity','.5');
+					$('#progress'+randID).width(imgWidth).height(5);
 				}
 			
 				// Move last image and stick it on the front
@@ -64,8 +64,8 @@
 				html = '<a href="javascript:void(0);"><img id="pause_btn'+randID+'" src="/images/carousel/images/pause.png" style="position:absolute;top:3px;right:3px;border:none" alt="Pause" /></a>';
 				html += '<a href="javascript:void(0);"><img id="play_btn'+randID+'" src="/images/carousel/images/play.png" style="position:absolute;top:3px;right:3px;border:none;display:none;" alt="Play" /></a>';
 				$(obj).append(html);
-				$('#pause_btn'+randID).css('opacity','.5').hover(function(){$(this).animate({opacity:'1'},250)},function(){$(this).animate({opacity:'.5'},250)});
-				$('#pause_btn'+randID).css('opacity','.5').hover(function(){$(this).animate({opacity:'1'},250)},function(){$(this).animate({opacity:'.5'},250)});
+				$('#pause_btn'+randID).hover(function(){$(this).animate()},function(){$(this).animate()});
+				$('#pause_btn'+randID).hover(function(){$(this).animate()},function(){$(this).animate()});
 				$('#pause_btn'+randID).click(function(){
 					autopilot = 0;
 					$('#progress'+randID).stop().fadeOut();
@@ -74,7 +74,7 @@
 					$('#play_btn'+randID).fadeIn(250);
 					showminmax();
 				});
-				$('#play_btn'+randID).css('opacity','.5').hover(function(){$(this).animate({opacity:'1'},250)},function(){$(this).animate({opacity:'.5'},250)});
+				$('#play_btn'+randID).hover(function(){$(this).animate()},function(){$(this).animate()});
 				$('#play_btn'+randID).click(function(){
 					autopilot = 1;
 					anim('next');
@@ -84,20 +84,20 @@
 				});
 				
 				// Left and right arrow image button actions
-				$('#btn_rt'+randID).css('opacity','.75').click(function(){
+				$('#btn_rt'+randID).click(function(){
 					autopilot = 0;
 					$('#progress'+randID).stop().fadeOut();
 					anim('next');
 					setTimeout(function(){$('#play_btn'+randID).fadeIn(250);},o.transitionSpeed);
 					clearTimeout(clearInt);
-				}).hover(function(){$(this).animate({opacity:'1'},250)},function(){$(this).animate({opacity:'.75'},250)});
-				$('#btn_lt'+randID).css('opacity','.75').click(function(){
+				}).hover(function(){$(this).animate()},function(){$(this).animate()});
+				$('#btn_lt'+randID).click(function(){
 					autopilot = 0;
 					$('#progress'+randID).stop().fadeOut();
 					anim('prev');
 					setTimeout(function(){$('#play_btn'+randID).fadeIn(250);},o.transitionSpeed);
 					clearTimeout(clearInt);
-				}).hover(function(){$(this).animate({opacity:'1'},250)},function(){$(this).animate({opacity:'.75'},250)});
+				}).hover(function(){$(this).animate()},function(){$(this).animate()});
 			
 				function showtext(t)
 				{

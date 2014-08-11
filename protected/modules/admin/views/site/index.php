@@ -6,14 +6,14 @@ Yii::app()->clientScript->registerCss('admin-panel','
         color: orange;
    }
    #admin-btn {
-    color: #fff; /* цвет текста */
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    background: orange; /* фон кнопки */
-    padding: .7em 1.5em; /* отступ от текста */
-    /*outline: none; *//* убирать контур в Mozilla */
-    outline: #269abc;
-    border: none;
+        color: #fff; /* цвет текста */
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        background: orange; /* фон кнопки */
+        padding: .7em 1.5em; /* отступ от текста */
+        /*outline: none; *//* убирать контур в Mozilla */
+        outline: #269abc;
+        border: none;
     }
      /* при наведении курсора мышки */
     #admin-btn:hover {
@@ -23,7 +23,6 @@ Yii::app()->clientScript->registerCss('admin-panel','
         background: orange;
     }
    .admin-items{
-        border: 0.1em solid orange;
         padding: 15px;
    }
 ');

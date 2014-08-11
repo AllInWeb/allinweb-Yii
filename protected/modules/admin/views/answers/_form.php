@@ -3,7 +3,7 @@
 /* @var $model Answers */
 /* @var $form CActiveForm */
 
-Yii::app()->clientScript->registerCss('
+Yii::app()->clientScript->registerCss('css','
     #qi{
         display: none;
     }
@@ -21,9 +21,9 @@ Yii::app()->clientScript->registerCss('
 
     <div class="row">
         <?php echo $form->labelEx($model,'body'); ?>
-        <?php echo $form->textField($model,'body',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $form->textField($model,'body', array('size' => 60, 'maxlength' => 255)); ?>
         <?php echo $form->error($model,'body'); ?>
-    </div>
+    </div>1
 
     <div class="row">
         <?php

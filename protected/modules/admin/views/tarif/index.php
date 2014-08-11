@@ -21,12 +21,12 @@ $(function(){
 })
 </script>
 
-<?php $atr = Tarif::model()->getAttributes() ?>
+<?php $atr = Tarif::model()->attributeLabels(); ?>
 
 <table id="tbl">
     <?php foreach ($atr as $key => $name): ?>
         <tr>
-            <td><?php echo Yii::t('aliases',$key); ?></td>
+            <td><?php echo $name; ?></td>
 
             <?php foreach ($model as $tarif): ?>
                 <?php

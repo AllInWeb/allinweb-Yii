@@ -8,23 +8,22 @@ Yii::app()->clientScript->registerCss('css', "
 ");
 ?>
 <script type="text/javascript">4
-    $(document).ready(function ($) {
+    $(function () {
         $(".yoxview").yoxview({
-            backgroundColor: "Blue",
+            backgroundColor: "Grey",
             playDelay: 5000
         });
-    });
-    $(function () {
         // fade in the grayscaled images to avoid visual jump
-        $(".greyScale").hide().fadeIn(1000);
+        if (!$.browser.msie) {
+            var $greyScale = $(".greyScale");
+            $greyScale.hide().fadeIn(1000);
+            $greyScale.greyScale({
+                fadeTime: 500,
+                reverse: false
+            });
+        }
     });
-    // user window.load to ensure images have been loaded
-    $(window).load(function () {
-        $(".greyScale").greyScale({
-            fadeTime: 500,
-            reverse: false
-        });
-    });
+
 </script>
 
 <div class="yoxview">

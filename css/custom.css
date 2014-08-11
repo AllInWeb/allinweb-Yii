@@ -5,9 +5,7 @@
     z-index: 100;
     width: 100%;
 }
-.mvUp{
-   visibility: visible;
-}
+
 div #accordion {
     color: orange;
     margin-top: 200px;
@@ -17,10 +15,8 @@ div #accordion {
 #qa-btn {
     color: #fff; /* цвет текста */
     text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
     background: orange; /* фон кнопки */
     padding: .7em 1.5em; /* отступ от текста */
-    outline: #269abc;
     border: none;
 }
 
@@ -37,6 +33,7 @@ div #accordion {
 #answer {
     margin-left: 20px;
 }
+
 .answers {
     display: none;
     border-bottom: 1px solid gray;
@@ -62,11 +59,11 @@ div#sites {
     background: #ffffff;
 }
 
-div#portfolio {
+div #portfolio {
     background: #ffffff;
 }
 
-div#tarif {
+div #tarif {
     background: #ffffff;
 }
 
@@ -78,8 +75,27 @@ div#contact {
     background: #ffffff;
 }
 
-#bottom-footer{
+#bottom-footer {
+    min-width: 1000px;
     position: relative;
 }
 
+#footer-contacts {
+    float: right;
+}
 
+#header_ft_menu, #bottom-footer, .fixed-menu {
+    min-width: 1000px;
+}
+
+#mvup {
+    opacity: 0.5;
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    margin-top: 30%;
+}
+
+#mvup:hover {
+    opacity: 1;
+}

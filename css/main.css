@@ -29,26 +29,12 @@
 }
 
 .textholder {
-
     overflow: hidden;
     opacity: 0.9;
     color: orange;
     text-align: left;
     font-size: medium;
     padding: 8px;
-
-}
-
-#mvup {
-    opacity: 0.5;
-    position: fixed;
-    display: none;
-    z-index: 1000;
-    margin-top: 30%;
-}
-
-#mvup:hover {
-    opacity: 1;
 }
 
 * {
@@ -60,8 +46,6 @@ ul.menu {
     text-align: center;
     padding: 0;
     display: inline-block;
-    background-repeat: no-repeat;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f4f4f', endColorstr='#2b2b2b', GradientType=0);
 }
 
 ul.menu li {
@@ -121,7 +105,8 @@ ul.menu li:hover ul li a:hover {
     float: left;
     display: inline;
 }
-.inln li{
+
+.inln li {
     list-style-type: none;
 }
 
@@ -137,6 +122,7 @@ ul.menu li:hover ul li a:hover {
 }
 
 #head {
+    /*min-width: 1000px;*/
     color: #ffffff;
     background-color: orange;
     top: 0px;
@@ -154,7 +140,6 @@ ul.menu li:hover ul li a:hover {
     padding: 15px 100px 15px 90px;
     color: #ffffff;
     height: 50px;
-    width: 100%;
     background-color: #212121;
     border-top: 1px solid #ffffff;
 }
@@ -165,17 +150,26 @@ ul.menu li:hover ul li a:hover {
 }
 
 #info {
+    height: 120px;
+    padding: 5px 50px 5px 70px;
     font-size: 0.95em;
     color: #ffffff;
     background-color: #666666;
 }
 
-#list {
+#sites-list {
     float: left;
+}
+
+#sites-list li {
+    font-family: sans-serif;
+    font-size: 14px;
+    list-style-type: none;
 }
 
 /*main!*/
 body {
+
     margin: 0;
     padding: 0;
     color: #555;
@@ -209,9 +203,11 @@ body {
 }
 
 #single {
+    margin-bottom: 0%;
     z-index: 1;
     position: relative;
 }
+
 #menu {
     border-bottom: 1px solid darkgray;
     background-color: #ffffff;

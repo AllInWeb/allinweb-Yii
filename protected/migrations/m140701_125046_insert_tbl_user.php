@@ -13,7 +13,8 @@ class m140701_125046_insert_tbl_user extends CDbMigration
 
     public function down()
     {
-        echo "m140701_125046_insert_tbl_user does not support migration down.\n";
-        return false;
-}
+        $this->delete('tbl_user', array(
+            'name = Administrator'
+        ));
+    }
 }
