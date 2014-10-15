@@ -2,47 +2,43 @@
 /* @var $this AnswersController */
 /* @var $model Answers */
 /* @var $form CActiveForm */
-?>
-<style>
+
+Yii::app()->clientScript->registerCss('css','
     #qi{
         display: none;
     }
-</style>
+');
+?>
 <div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'answers-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
+<?php $form = $this->beginWidget('CActiveForm', array(
+    'id'=>'answers-form',
+    'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+    <?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textField($model,'body',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'body'); ?>
-	</div>
+    <div class="row">
+        <?php echo $form->labelEx($model,'body'); ?>
+        <?php echo $form->textField($model,'body', array('size' => 60, 'maxlength' => 255)); ?>
+        <?php echo $form->error($model,'body'); ?>
+    </div>1
 
-	<div class="row">
-		<?php
-        if(isset($_GET['question_id'])){
+    <div class="row">
+        <?php
+        if (isset($_GET['question_id'])) {
             $qi = $_GET['question_id'] ;
-        }else{  $qi = null ;}
+        } else {
+            $qi = null ;
+        } ?>
+        <?php echo $form->textField($model,'question_id',array('id'=>'qi','value'=>$qi)); ?>
 
-		//echo $form->labelEx($model,'question_id'); ?>
-		<?php echo $form->textField($model,'question_id',array('id'=>'qi','value'=>$qi)); ?>
-		<?php //echo $form->error($model,'question_id'); ?>
-	</div>
+    </div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+    <div class="row buttons">
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'Ответить' : 'Сохранить'); ?>
+    </div>
 
 <?php $this->endWidget(); ?>
 

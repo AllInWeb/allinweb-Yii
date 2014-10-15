@@ -1,58 +1,33 @@
 <?php
-/* @var $this SiteController */
-
 $this->pageTitle = Yii::app()->name . ' - Admin';
-
-?>
-<style>
-    #adminka h1, .admin-items h3 {
+Yii::app()->clientScript->registerCss('admin-panel','
+   #adminka h1, .admin-items h3 {
         text-align: center;
         color: orange;
+   }
+   #admin-btn {
+        color: #fff; /* цвет текста */
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        background: orange; /* фон кнопки */
+        padding: .7em 1.5em; /* отступ от текста */
+        /*outline: none; *//* убирать контур в Mozilla */
+        outline: #269abc;
+        border: none;
     }
-    .admin-items{
-        border: 0.1em solid orange;
+     /* при наведении курсора мышки */
+    #admin-btn:hover {
+        background: #eea236;
+    }
+    #admin-btn:active {
+        background: orange;
+    }
+   .admin-items{
         padding: 15px;
-    }
-    /*.admin-items:nth-child(odd) {*/
-        /*background-color: khaki;*/
-    /*}*/
+   }
+');
+?>
 
-    /*.admin-items:nth-child(even) {*/
-        /*background-color: lightgreen;*/
-    /*}*/
-    #admin-btn{
-        text-decoration:none;
-        text-align:center;
-        padding:11px 32px;
-        border:solid 1px #e67409;
-        -webkit-border-radius:4px;
-        -moz-border-radius:4px;
-        border-radius: 4px;
-        font:10px "Courier New", Courier, monospace;
-        font-weight:bold;
-        color:#ede2d8;
-        background:#e35d10;
-        -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-        -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;
-        box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
-
-    }
-    #admin-btn:hover{
-         padding:11px 32px;
-         border:solid 1px #e67409;
-         -webkit-border-radius:4px;
-         -moz-border-radius:4px;
-         border-radius: 4px;
-         font:10px "Courier New", Courier, monospace;
-         font-weight:bold;
-         color:#ede2d8;
-         background:#e35d10;
-         -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;
-         -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 5px #ffffff;
-         box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;
-
-     }
-</style>
 <div id="adminka">
     <h1>Админ панель</h1>
     <?php if (Yii::app()->user->checkAccess(2)): ?>
@@ -82,11 +57,7 @@ $this->pageTitle = Yii::app()->name . ' - Admin';
     </div>
     <div id="admin-faq" class="admin-items">
         <h3>Вопросы/ответы</h3>
-        <?php
-        $criteria = new CDbCriteria();
-        $criteria->condition = "answered = 0";
-        ?>
-        <?php echo CHtml::link("Все вопросы(Новых-" . count(Question::model()->findAll($criteria)) . ")", array('question/admin'),array('id'=>'admin-btn')); ?>
+        <?php echo CHtml::link("Все вопросы(Новых-" . $count . ")", array('question/admin'),array('id'=>'admin-btn')); ?>
         <?php echo CHtml::link("Все ответы", array('answers/admin'),array('id'=>'admin-btn')); ?>
     </div>
 

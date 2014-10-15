@@ -1,14 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: viktor
- * Date: 7/9/14
- * Time: 9:41 AM
- */
-?>
-<style>
-
-    #addcolumn span {
+Yii::app()->clientScript->registerCss('addcolumn','
+#addcolumn span {
 
         padding: 10px;
     }
@@ -32,20 +24,22 @@
     width: 100px;
     height: 20px;
     }
-</style>
-<script type="text/javascript">
-
-</script>
+');
+?>
 <div id="addcolumn">
     <?php echo CHtml::form(Yii::app()->createUrl('admin/tarif/addcolumn'), 'post'); ?>
     <span>
-           <?php echo CHtml::textField('column', '', array('class' => 'inpt', 'placeholder' => 'Введите название поля')); ?>
-        </span>
+        <?php echo CHtml::textField('column', '', array('class' => 'inpt', 'placeholder' => 'Введите название поля')); ?>
+    </span>
     <span>
-           <?php echo CHtml::textField('alias', '', array('class' => 'inpt', 'placeholder' => 'Введите псевдоним поля')); ?>
-        </span>
-    <span><?php echo CHtml::dropDownList('type', 'val', array('int' => 'INT', 'string' => 'STING')); ?></span>
-    <span><?php echo CHtml::submitButton('Добавить'); ?></span>
+        <?php echo CHtml::textField('alias', '', array('class' => 'inpt', 'placeholder' => 'Введите псевдоним поля')); ?>
+    </span>
+    <span>
+        <?php echo CHtml::dropDownList('type', 'val', array('int' => 'INT', 'string' => 'STING')); ?>
+    </span>
+    <span>
+        <?php echo CHtml::submitButton('Добавить'); ?>
+    </span>
     <?php echo CHtml::endform(); ?>
 </div>
 <br>
@@ -55,16 +49,11 @@
             <td>Колонка</td>
             <td>Опции</td>
         </tr>
-
-        <?php foreach ($columns as $column => $val): ?>
-
+        <?php foreach ($columns as $column => $val) { ?>
             <tr>
                 <td style="color: orange"><?php echo $column; ?></td>
-                <td><?php echo CHtml::link('Удалить колонку', array('tarif/dropcolumn','column'=>$column),array('id'=>'drop-col')); ?></td>
+                <td><?php echo CHtml::link('Удалить колонку', array('tarif/dropcolumn', 'column' => $column), array('id'=> 'drop-col')); ?></td>
             </tr>
-
-
-        <?php endforeach; ?>
+        <?php } ?>
     </table>
-
 </div>

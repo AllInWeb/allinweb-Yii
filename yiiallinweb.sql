@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1deb1
+-- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Jul 18, 2014 at 02:04 PM
--- Server version: 5.5.37
--- PHP Version: 5.3.10-1ubuntu3.13
+-- Хост: localhost
+-- Время создания: Авг 01 2014 г., 15:20
+-- Версия сервера: 5.5.38-0ubuntu0.14.04.1
+-- Версия PHP: 5.5.9-1ubuntu4.3
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `yiiallinweb`
+-- База данных: `yiiallinweb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_aliases`
+-- Структура таблицы `tbl_aliases`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_aliases` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `tbl_aliases` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
--- Dumping data for table `tbl_aliases`
+-- Дамп данных таблицы `tbl_aliases`
 --
 
 INSERT INTO `tbl_aliases` (`id`, `column`, `alias`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `tbl_aliases` (`id`, `column`, `alias`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_answers`
+-- Структура таблицы `tbl_answers`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_answers` (
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `tbl_answers` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
--- Dumping data for table `tbl_answers`
+-- Дамп данных таблицы `tbl_answers`
 --
 
 INSERT INTO `tbl_answers` (`id`, `body`, `question_id`) VALUES
@@ -87,7 +87,7 @@ INSERT INTO `tbl_answers` (`id`, `body`, `question_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_carousel`
+-- Структура таблицы `tbl_carousel`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_carousel` (
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `tbl_carousel` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
--- Dumping data for table `tbl_carousel`
+-- Дамп данных таблицы `tbl_carousel`
 --
 
 INSERT INTO `tbl_carousel` (`id`, `image`, `description`, `price`, `days`) VALUES
@@ -114,7 +114,7 @@ INSERT INTO `tbl_carousel` (`id`, `image`, `description`, `price`, `days`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_migration`
+-- Структура таблицы `tbl_migration`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_migration` (
@@ -124,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `tbl_migration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_migration`
+-- Дамп данных таблицы `tbl_migration`
 --
 
 INSERT INTO `tbl_migration` (`version`, `apply_time`) VALUES
@@ -143,7 +143,7 @@ INSERT INTO `tbl_migration` (`version`, `apply_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_portfolio`
+-- Структура таблицы `tbl_portfolio`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_portfolio` (
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `tbl_portfolio` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
--- Dumping data for table `tbl_portfolio`
+-- Дамп данных таблицы `tbl_portfolio`
 --
 
 INSERT INTO `tbl_portfolio` (`id`, `image`, `description`) VALUES
@@ -167,7 +167,7 @@ INSERT INTO `tbl_portfolio` (`id`, `image`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_question`
+-- Структура таблицы `tbl_question`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_question` (
@@ -180,21 +180,22 @@ CREATE TABLE IF NOT EXISTS `tbl_question` (
   `answered` tinyint(1) NOT NULL,
   `actual` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
--- Dumping data for table `tbl_question`
+-- Дамп данных таблицы `tbl_question`
 --
 
 INSERT INTO `tbl_question` (`id`, `theme`, `fio`, `email`, `question`, `date`, `answered`, `actual`) VALUES
 (1, 'Test', 'Test', 'Test', 'Test', 1404727005, 1, 1),
 (2, 't', 'dsd', 'dsad', 'dasd', 1404728599, 1, 1),
-(16, 'Test', 'Test', 'viktor.novikov95@gmail.com', 'gbfvzx', 1405600965, 0, 0);
+(16, 'Test', 'Test', 'viktor.novikov95@gmail.com', 'gbfvzx', 1405600965, 0, 0),
+(17, 'Test', 'Test', 'viktor.novikov95@gmail.com', 'Test question', 1406786680, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_tarif`
+-- Структура таблицы `tbl_tarif`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tarif` (
@@ -224,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `tbl_tarif` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `tbl_tarif`
+-- Дамп данных таблицы `tbl_tarif`
 --
 
 INSERT INTO `tbl_tarif` (`id`, `type`, `price`, `period`, `map`, `comments`, `basket`, `qa`, `cms`, `unlimpage`, `freefill`, `blog`, `visitstat`, `votes`, `rotator`, `gallery`, `contact`, `catalog`, `forum`, `sitemap`, `google`, `huu`) VALUES
@@ -235,7 +236,7 @@ INSERT INTO `tbl_tarif` (`id`, `type`, `price`, `period`, `map`, `comments`, `ba
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Структура таблицы `tbl_user`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_user` (
@@ -248,7 +249,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
--- Dumping data for table `tbl_user`
+-- Дамп данных таблицы `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id`, `name`, `password`, `role`, `email`) VALUES

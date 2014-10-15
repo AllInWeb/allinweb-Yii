@@ -52,7 +52,7 @@
                     '</div>');
 				var correctTHWidth = parseInt($('#textholder'+randID).css('paddingTop'));
 				var correctTHHeight = parseInt($('#textholder'+randID).css('paddingRight'));
-				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).css({'backgroundColor':'#FFF','opacity':'0.9'});
+				$('#textholder'+randID).width(imgWidth-(correctTHWidth * 2)).css({'backgroundColor':'#FFF'});
 				showtext($('li:eq(1) p', obj).html());
 			
 				// Prev/next button(img) 
@@ -127,7 +127,7 @@
 					$('#btn_lt'+randID).fadeOut(500);
 					
 					// animate textholder out of frame
-					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
+//					$('#textholder'+randID).animate({marginBottom:(-imgHeight*o.textholderHeight)-(correctTHHeight * 2)+'px'},500);
 					//?? Fade out play/pause?
 					$('#pause_btn'+randID).fadeOut(250);
 					$('#play_btn'+randID).fadeOut(250);
